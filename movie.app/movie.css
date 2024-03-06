@@ -1,0 +1,45 @@
+/* Utilise flexbox sur le conteneur des films pour les aligner horizontalement */
+#moviesContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 10px; /* Ajoute un espace entre les éléments */
+}
+
+.movie {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(33.333% - 20px); /* Ajuste cette valeur pour changer la largeur des films. Soustrais le double du gap pour maintenir l'espacement correct */
+    box-sizing: border-box; /* Assure que padding et border sont inclus dans la largeur */
+}
+
+/* Assure-toi que les autres éléments sont toujours bien stylés */
+.container {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 20px;
+}
+ 
+.search-container {
+    margin-top: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
